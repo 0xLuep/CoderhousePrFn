@@ -1,0 +1,594 @@
+* {
+    margin: 0%;
+}
+
+
+header {
+    background-color: #81D618;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 21% 0px 30px;
+}
+
+
+.logoTopBott {
+    width: auto;
+    max-width: 125px;
+    margin: 10px 15px;
+}
+
+
+
+.listContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px 15%;
+}
+
+
+.listContainer li {
+    margin: 0px 45px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.listContainer li:nth-child(2) a {
+    display: inline-block;
+    width: 178px;
+    max-width: 178px;
+}
+
+.listContainer li:nth-child(3) a {
+    display: inline-block;
+    width: 119px;
+    max-width: 119px;
+}
+
+
+.listContainer a, a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.listContainer a:hover {
+    color: #ffffff6c;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15%;
+}
+
+
+.mainRowHead {
+    background-color: #1E3600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.mainHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.mainHead img {
+    position: relative;
+    border-radius: 0 0 5% 5%;
+}
+
+
+.mainHead .contHeadText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+
+.hContainer {
+    width: 600px;
+    height: 150px;
+    border-style: dashed;
+    border-color: #81D618;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hContainer h1, .hContainer h2 {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.h2Container {
+    border-top-style: hidden;
+}
+
+
+.mainHead .contHeadText h1 {
+    font-size: 90px;
+    font-weight: normal;
+}
+
+
+.hContainer h2 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+
+.mainVPyTPA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+
+
+.mainVPyTPA h2 {
+    font-size: 50px;
+    color: #7E58A3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.mainNotContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.mainNotContainer > div {
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.not * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.not > img {
+    width: 500px;
+    height: 500px;
+    border: 3px solid blueviolet;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+
+.not > h2 {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.not > p {
+    padding: 0 5%;
+    margin: 0 0 50px 0;
+}
+
+.not div > p {
+    padding: 0 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.not > div {
+    display: flex;
+    align-items: center;
+}
+
+
+#timeLogo {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+.mainMidCont {
+    background-color: rgba(126, 88, 163, 0.75);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMidCont img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.allInfoCont {
+    margin: 100px 30px 100px 100px;
+    width: 500px;
+}
+
+.streetAndMap {
+    margin: 100px 100px 100px 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mapContainer {
+    background-color: #613D7E;
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+    border: 5px #613D7E solid;
+}
+
+
+.mainContInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 50px 0;
+}
+
+.rowCont {
+    background-color: #ffffff;
+    width: auto;
+    height: 2px;
+    margin-bottom: 50px;
+}
+
+
+.logAndInf {
+    display: flex;
+    margin: 20px 0;
+}
+
+.logAndInf h2 {
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 15px;
+}
+
+
+.mainFollowCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mainFollowCont h2 {
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+
+.seguinosImages img {
+    margin: 0 50px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+#locationLogo {
+    width: 30px;
+}
+
+
+
+
+
+
+
+.vpytpaInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 100px 0;
+}
+
+.vpytpaInfo p {
+    min-width: 220px;
+    max-width: 355px;
+}
+
+
+
+.qEsPinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qEsPinfo h3 {
+    align-self: flex-start;
+}
+
+h3 {
+    margin: 100px 0px 20px 0px;
+    font-size: 35px;
+    color: #7E58A3;
+    padding-left: 120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#slashTopText {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+
+p {
+    margin: 25px 0 25px 0;
+    padding: 0 120px 0 120px;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.qEsPinfo:nth-child(2) {
+    margin-bottom: 75px;
+}
+
+
+.imgMed {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgMed img {
+    max-width: 100%;
+    margin: 0px 25px 0 25px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15%;
+    border-color: #7E58A3;
+}
+
+
+.backgroundImage {
+    opacity: 30%;
+}
+
+
+
+.midSlashContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(97, 61, 126, 0.6);
+    height: 700px;
+    max-height: 700px;
+    width: 1600px;
+    margin: 0 0 75px 0;
+}
+
+.midSlashContainer img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+}
+
+.midSlashContainer .arrow {
+    min-width: 50px;
+    min-height: 50px;
+    margin: 0 75px;
+}
+
+.midSlashContainer .arrow .a1,  .midSlashContainer .arrow .b2{
+    background-color: #00000081;
+    width: 30px;
+    height: 10px;
+    rotate: -30deg;
+    border-radius: 50px;
+}
+
+.midSlashContainer .arrow .a2, .midSlashContainer .arrow .b1 {
+    background-color: #00000081;
+    width: 30px;
+    height: 10px;
+    rotate: 30deg;
+    border-radius: 50px;
+}
+
+
+.benef {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.benefTPA {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.benefTPA div {
+    display: inline-block;
+    width: 400px;
+    margin-right: 30px;
+}
+
+.benefTPA div h3, .benefTPA div ul {
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.benefTPA div ul {
+    padding-left: 50px;
+}
+
+.benefTPA img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+
+.blackRow {
+    background-color: #000000;
+    width: 70%;
+    height: 3px;
+    margin-bottom: 75px;
+}
+
+
+.lastInfoTPA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lastInfoTPA h3, .lastInfoSobreMi h3 {
+    text-align: center;
+    padding: 0 40px;
+    margin: 20px 0 40px 0;
+}
+
+.lastInfoTPA p, .lastInfoSobreMi p {
+    text-align: center;
+}
+
+
+.lastInfoSobreMi {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+ul, ol {
+    margin: 25px 0 25px 0;
+    padding: 0 120px 0 220px;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin: 75px 0px 0px 0px;
+}
+
+#noMargin {
+    margin: 0;
+}
+
+
+.mainFooter {
+    background-color: #7E58A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+
+.logosContainer {
+    margin: 0 25px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logosContainer a {
+    margin: 0 20px;
+}
+
+
+.fottLogo {
+    max-width: 44px;
+    max-height: 44px;
+}
+
+
+
+
+.credits {
+    background-color: #613D7E;
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rowFotter {
+    background-color: #c1a8e2;
+    width: 100%;
+    height: 5px;
+    top: 50px;
+}
+
+.credits p {
+    font-size: 15px;
+    margin: 13px;
+    color: #FFFFFF;
+}
