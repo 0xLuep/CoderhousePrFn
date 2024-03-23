@@ -241,14 +241,14 @@ p {
 
 
 .mainNotContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 85%;
 }
 
 
 .mainNotContainer > div {
-    width: 500px;
+    width: 400px;
     height: auto;
     margin: 100px auto;
     display: flex;
@@ -262,8 +262,8 @@ p {
 
 
 .not > img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border: 3px solid blueviolet;
     border-radius: 50px;
     margin-bottom: 25px;
