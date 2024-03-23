@@ -421,33 +421,25 @@ p {
 
 
 
-.backgroundImage {
-    opacity: 30%;
-}
-
-
 
 .midSlashContainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(97, 61, 126, 0.6);
-    height: 700px;
-    max-height: 700px;
-    width: 1600px;
+    height: auto;
+    width: 85%;
     margin: 0 0 75px 0;
 }
 
 .midSlashContainer img {
-    width: 600px;
-    height: 600px;
-    border-radius: 50px;
+    width: 40%;
+    margin: 50px 0;
+    border-radius: 5%;
 }
 
 .midSlashContainer .arrow {
-    min-width: 50px;
-    min-height: 50px;
-    margin: 0 75px;
+    margin: 0 5%;
 }
 
 .midSlashContainer .arrow .a1,  .midSlashContainer .arrow .b2{
