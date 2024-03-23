@@ -20,6 +20,10 @@ nav {
     margin: 10px 15px;
 }
 
+#actualPage {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
 
 
 .listContainer {
@@ -97,38 +101,43 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 85%;
 }
 
 
 .mainHead img {
     position: relative;
     border-radius: 0 0 5% 5%;
+    width: 70%;
 }
 
 
-.mainHead .contHeadText {
+.contHeadText {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
+    width: 60%;
+    height: 60%;
 }
 
 
 .hContainer {
-    width: 600px;
-    height: 150px;
+    width: 60%;
+    height: 100px;
     border-style: dashed;
     border-color: #81D618;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2%;
 }
 
 .hContainer h1, .hContainer h2 {
     color: #FFFFFF;
     text-align: center;
-    padding: 50px;
+    margin: 0 10%;
 }
 
 
