@@ -164,7 +164,7 @@ h1 {
 }
 
 h3 {
-    margin: 8% 0px 3% 0px;
+    margin: 5% 0px 0px 0px;
     padding-left: 10%;
     font-size: 35px;
     color: #7E58A3;
@@ -198,6 +198,7 @@ p {
     width: 85%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 
@@ -228,9 +229,9 @@ p {
 }
 
 
-.mainNotContainer > div {
-    width: 80%;
-    margin: 100px auto;
+.not{
+    width: 60%;
+    margin: 10% auto;
     display: flex;
     flex-direction: column;
 }
@@ -245,7 +246,7 @@ p {
     width: 100%;
     height: 100%;
     border: 3px solid blueviolet;
-    border-radius: 50px;
+    border-radius: 10%;
     margin-bottom: 25px;
 }
 
@@ -255,6 +256,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 0 0 20px 0;
+    color: #684192;
 }
 
 .not > p {
@@ -414,40 +416,24 @@ p {
 }
 
 
-.midSlashContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(97, 61, 126, 0.6);
-    height: auto;
+.carousel {
     width: 100%;
-    margin: 0 0 10% 0;
+    background-color: #7E58A3;
+    margin-bottom: 5%;
 }
 
-.midSlashContainer img {
+
+.carousel-outinner-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.carousel-inner {
     width: 40%;
-    margin: 3% 0;
-    border-radius: 5%;
-}
-
-.midSlashContainer .arrow {
-    margin: 0;
-}
-
-.midSlashContainer .arrow .a1,  .midSlashContainer .arrow .b2{
-    background-color: #00000081;
-    width: 30px;
-    height: 10px;
-    rotate: -30deg;
-    border-radius: 50px;
-}
-
-.midSlashContainer .arrow .a2, .midSlashContainer .arrow .b1 {
-    background-color: #00000081;
-    width: 30px;
-    height: 10px;
-    rotate: 30deg;
-    border-radius: 50px;
+    align-self: center;
+    padding: 4%;
 }
 
 
@@ -462,6 +448,7 @@ p {
     display: inline-block;
     width: 400px;
     margin: 0 30px;
+    align-self: center;
 }
 
 .benefTPA div h3, .benefTPA div ul {
