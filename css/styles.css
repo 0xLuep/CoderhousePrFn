@@ -96,7 +96,12 @@ main {
     height: 100px;
 }
 
-h1 {
+.mainRowHead #myh1 {
+    margin: 0;
+    padding: 0;
+}
+
+#myh1 {
     color: #FFFFFF;
     text-align: center;
 }
@@ -106,7 +111,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
 }
 
 
@@ -129,8 +134,8 @@ h1 {
 
 
 .hContainer {
-    width: 60%;
-    height: 100px;
+    width: 70%;
+    height: 144px;
     border-style: dashed;
     border-color: #81D618;
     display: flex;
@@ -143,6 +148,7 @@ h1 {
     color: #FFFFFF;
     text-align: center;
     margin: 0 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -178,11 +184,13 @@ h1 {
     align-self: flex-start;
 }
 
-h3 {
+#myh3 {
     margin: 80px 0px 20px 0px;
+    padding: 0 10%;
+    font-weight: bold;
     font-size: 35px;
+    line-height: normal;
     color: #7E58A3;
-    padding-left: 120px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -191,12 +199,17 @@ h3 {
     padding: 0;
     margin: 0 0 20px 0;
     text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: normal;
+    color: #7E58A3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-p {
-    margin: 25px 0 25px 0;
-    padding: 0 120px 0 120px;
+#myp {
+    margin: 2% 0;
+    padding: 0 10%;
     font-size: 24px;
     text-indent: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -230,21 +243,6 @@ p {
     display: flex;
     flex-direction: column;
     width: 85%;
-}
-
-
-.mainVPyTPA {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 75px;
-}
-
-
-.mainVPyTPA h2 {
-    font-size: 50px;
-    color: #7E58A3;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -411,21 +409,38 @@ p {
 }
 
 
+/*--SOBRE MI----------------------------------------------------------------*/
 
-/*--TPA----------------------------------------------------------------*/
 
+.mainVPyTPA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    width: 100%;
+}
+
+
+.mainVPyTPA #myh2 {
+    font-size: 50px;
+    color: #7E58A3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 
 .vpytpaInfo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 50px 0 100px 0;
 }
 
-.vpytpaInfo p {
-    min-width: 220px;
-    max-width: 355px;
+.vpytpaInfo #myp {
+    margin: 10px 20px;
+    padding: 0;
+    max-width: 350px;
 }
 
 
@@ -435,19 +450,23 @@ p {
     justify-content: space-around;
     background-color: rgba(97, 61, 126, 0.6);
     height: auto;
-    width: 85%;
+    width: 100%;
+    padding: 0 7%;
     margin: 0 0 75px 0;
 }
 
+
 .midSlashContainer img {
-    width: 40%;
+    width: 50%;
     margin: 50px 0;
     border-radius: 5%;
 }
 
+
 .midSlashContainer .arrow {
     margin: 0 5%;
 }
+
 
 .midSlashContainer .arrow .a1,  .midSlashContainer .arrow .b2{
     background-color: #00000081;
@@ -456,6 +475,7 @@ p {
     rotate: -30deg;
     border-radius: 50px;
 }
+
 
 .midSlashContainer .arrow .a2, .midSlashContainer .arrow .b1 {
     background-color: #00000081;
@@ -473,26 +493,32 @@ p {
     margin-bottom: 70px;
 }
 
+
 .benefTPA div {
     display: inline-block;
     width: 400px;
-    margin-right: 30px;
+    margin: 0 30px 0 40px;
 }
 
-.benefTPA div h3, .benefTPA div ul {
+
+.benefTPA div #myh3, .benefTPA div #myul {
     margin: 0 0 40px 0;
     padding: 0;
 }
 
-.benefTPA div ul {
+
+.benefTPA div #myul {
     padding-left: 50px;
 }
 
+
 .benefTPA img {
-    width: 400px;
-    height: 400px;
+    width: 40%;
+    max-width: 400px;
+    height: 40%;
     border-radius: 20px;
-    margin-left: 30px;
+    margin: 0 40px 0 30px;
+    place-self: center;
 }
 
 
@@ -512,13 +538,15 @@ p {
     width: 85%;
 }
 
-.lastInfoTPA h3, .lastInfoSobreMi h3 {
+
+.lastInfoTPA #myh3, .lastInfoSobreMi #myh3 {
     text-align: center;
     padding: 0 40px;
     margin: 20px 0 40px 0;
 }
 
-.lastInfoTPA p, .lastInfoSobreMi p {
+
+.lastInfoTPA #myp, .lastInfoSobreMi #myp {
     text-align: center;
 }
 
@@ -530,10 +558,9 @@ p {
 }
 
 
-
-ul, ol {
+#myul, #myol {
     margin: 25px 0 25px 0;
-    padding: 0 120px 0 220px;
+    padding: 0 0 0 220px;
     font-size: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -603,7 +630,7 @@ footer {
     top: 50px;
 }
 
-.credits p {
+.credits #myp {
     font-size: 15px;
     margin: 13px;
     color: #FFFFFF;
