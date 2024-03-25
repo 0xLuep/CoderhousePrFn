@@ -113,8 +113,15 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 10%;
 }
+
+
+.mainRowHead h1 {
+    margin: 0;
+    padding: 0.75%;
+}
+
 
 h1 {
     color: #FFFFFF;
@@ -254,15 +261,17 @@ p {
 
 
 .mainNotContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     width: 85%;
 }
 
 
 .not{
     width: 60%;
+    max-width: 300px;
     margin: 10% auto;
+    padding: 0 1%;
     display: flex;
     flex-direction: column;
 }
@@ -273,12 +282,12 @@ p {
 }
 
 
-.not > img {
+.imgNotCont > img {
     width: 100%;
     height: 100%;
-    border: 3px solid blueviolet;
+    border: 2px solid blueviolet;
     border-radius: 10%;
-    margin-bottom: 25px;
+    margin-bottom: 10%;
 }
 
 
@@ -286,13 +295,13 @@ p {
     font-size: 35px;
     width: 100%;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 5% 0;
     color: #684192;
 }
 
 .not > p {
-    padding: 0 5%;
-    margin: 0 0 50px 0;
+    padding: 0 3%;
+    margin: 0 0 5% 0;
 }
 
 .not div > p {
@@ -309,8 +318,8 @@ p {
 
 
 #timeLogo {
-    width: 30px;
-    height: 30px;
+    width: 10%;
+    height: 75%;
 }
 
 
@@ -422,7 +431,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 4%;
 }
 
 
@@ -435,15 +444,15 @@ p {
 
 .vpytpaInfo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0 100px 0;
+    margin: 3% 0 5% 0;
 }
 
 .vpytpaInfo p {
     width: 35%;
-    padding: 0 7%;
-    margin: 30px 0;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -471,24 +480,25 @@ p {
 .benefTPA {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 10%;
+    width: 85%;
+    margin-bottom: 5%;
 }
 
 .benefTPA div {
     display: inline-block;
     width: 400px;
-    margin: 0 30px;
+    margin: 0;
+    padding: 3%;
     align-self: center;
 }
 
 .benefTPA div h3, .benefTPA div ul {
-    margin: 0 0 40px 0;
+    margin: 0 0 5% 0;
     padding: 0;
 }
 
 .benefTPA div ul {
-    padding-left: 50px;
+    padding-left: 10%;
 }
 
 .benefTPA img {
@@ -496,7 +506,7 @@ p {
     height: 35%;
     place-self: center;
     border-radius: 20px;
-    margin: 0 30px;
+    margin: 3%;
 }
 
 
@@ -639,7 +649,7 @@ footer {
     }
 
 
-    .hContainer h2 {
+    .hContainer h2, .not > h2 {
         font-size: 25px;
     }
 
@@ -654,12 +664,12 @@ footer {
     }
 
 
-    .rowFotter {
+    .rowFotter, .blackRow {
         height: 3px;
     }
 
 
-    .credits p {
+    .credits p, .not div > p {
         font-size: 12px;
         margin: 10px 0;
     }
@@ -700,7 +710,7 @@ footer {
     }
 
 
-    .hContainer h2 {
+    .hContainer h2, .not > h2 {
         font-size: 20px;
     }
 }
@@ -732,12 +742,12 @@ footer {
     }
 
 
-    .mainHead .contHeadText h1 {
+    .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
         font-size: 30px;
     }
 
 
-    .hContainer h2 {
+    .hContainer h2, .not > h2 {
         font-size: 15px;
     }
 
@@ -756,12 +766,12 @@ footer {
     }
 
 
-    .rowFotter {
+    .rowFotter, .blackRow  {
         height: 2px;
     }
 
 
-    .credits p {
+    .credits p, .not div > p {
         font-size: 10px;
         margin: 8px 0;
     }
@@ -798,12 +808,12 @@ footer {
     }
 
 
-    .mainHead .contHeadText h1 {
+    .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
         font-size: 20px;
     }
 
 
-    .hContainer h2 {
+    .hContainer h2, .not > h2 {
         font-size: 10px;
     }
 
@@ -818,12 +828,12 @@ footer {
     }
 
 
-    .rowFotter {
+    .rowFotter, .blackRow  {
         height: 1px;
     }
 
 
-    .credits p {
+    .credits p, .not div > p {
         font-size: 6px;
         margin: 4px 0;
     }
@@ -850,26 +860,34 @@ footer {
     .btn img {
         width: 60%;
     }
+
+
+    .vpytpaInfo {
+        width: 85%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+
+    .vpytpaInfo p {
+        width: 100%;
+        padding: 3% 0;
+    }
 }
 
 
 @media (max-width: 386px) {
     .dropdown-menu {
-        font-size: 7px;
+        font-size: 8px;
     }
 
 
-    .mainHead .contHeadText h1 {
-        font-size: 20px;
-    }
-
-
-    .mainHead .contHeadText h1 {
+    .mainHead .contHeadText h1 , .mainRowHead h1, .mainVPyTPA h2 {
         font-size: 15px;
     }
 
 
-    .hContainer h2 {
+    .hContainer h2, .not > h2 {
         font-size: 8px;
     }
 
@@ -880,23 +898,23 @@ footer {
 
 
     p {
-        font-size: 9px;
+        font-size: 8px;
     }
 
 
-    .rowFotter {
+    .rowFotter, .blackRow {
         height: 1px;
     }
 
 
-    .credits p {
+    .credits p, .not div > p {
         font-size: 4px;
         margin: 3px 0;
     }
 
 
     ul, ol {
-        font-size: 9px;
+        font-size: 8px;
     }
 }
 
