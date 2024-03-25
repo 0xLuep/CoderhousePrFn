@@ -5,6 +5,7 @@
 
 /*--header / navbar----------------------------------------------------------------*/
 
+
 header {
     background-color: #81D618;
     display: flex;
@@ -13,15 +14,19 @@ header {
 }
 
 
-nav {
-    width: 100%;
+#logoVP {
+    width: 13%;
 }
 
 
 .logoTopBott {
-    width: auto;
-    max-width: 125px;
-    margin: 10px 15px;
+    width: 80%;
+    margin: 10%;
+}
+
+
+nav {
+    width: 100%;
 }
 
 
@@ -51,7 +56,7 @@ nav {
 
 
 
-.listContainer a, a:visited{
+.listContainer a, .listContainer a:visited{
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -349,6 +354,7 @@ p {
     margin: 20px 0;
 }
 
+
 .logAndInf h2 {
     color: #FFFFFF;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -381,7 +387,6 @@ p {
 #locationLogo {
     width: 30px;
 }
-
 
 
 /*--TPA----------------------------------------------------------------*/
@@ -516,7 +521,7 @@ ul, ol {
 
 
 footer {
-    margin: 75px 0px 0px 0px;
+    margin: 5% 0px 0px 0px;
 }
 
 #noMargin {
@@ -528,20 +533,19 @@ footer {
     background-color: #7E58A3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 3%;
 }
 
 
 .logosContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .logosContainer a {
-    margin: 0 20px;
+    margin: 0 3%;
 }
 
 .logosContainer a:hover {
@@ -549,9 +553,13 @@ footer {
 }
 
 
+#logoFoot {
+    width: 4%;
+}
+
+
 .fottLogo {
-    max-width: 44px;
-    max-height: 44px;
+    width: 80%;
 }
 
 
@@ -560,10 +568,7 @@ footer {
 
 .credits {
     background-color: #613D7E;
-    height: 50px;
-    margin: 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -585,3 +590,73 @@ footer {
 /*--Media Queries----------------------------------------------------------------*/
 
 
+@media (max-width: 1170px) {
+    #logoVP {
+        width: 15%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #logoVP {
+        width: 17%;
+    }
+}
+
+
+@media (min-width: 989px) {
+    .dropstart {
+        display: none;
+    }    
+}
+
+
+@media (max-width: 988px) {
+    
+    .listContainer {
+        display: none;
+    }
+
+
+    .dropstart {
+        list-style: none;
+    }
+
+
+    .dropdown-item {
+        text-align: center;
+    }
+
+
+    .dropdown-item.active {
+        background-color: #6a2fa8c2;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .btn-sm {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .btn-md {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #logoVP {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #logoVP {
+        width: 30%;
+    }
+}

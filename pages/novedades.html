@@ -10,7 +10,9 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../assets/logoDef.png" alt="LogoVillaPilates" class="logoTopBott"></a>
+        <a href="../index.html" id="logoVP">
+            <img src="../assets/logoDef.png" alt="LogoVillaPilates" class="logoTopBott">
+        </a>
         <nav>
             <ul class="listContainer">
                 <li>
@@ -29,6 +31,21 @@
                     <a href="./contacto.html" class="aNav">Contacto</a>
                 </li>
             </ul>
+            <li class="nav-item dropstart float-end" data-bs-theme="light">
+                <button class="btn btn-md btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/homeGreen.png" alt="homeImg">
+                </button>
+                <button class="btn btn-secondary btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/homeGreen.png" alt="homeImg">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light">
+                    <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="./tpa.html">Que es TPA?</a></li>
+                    <li><a class="dropdown-item" href="./sobre_mi.html">Sobre Mi</a></li>
+                    <li><a class="dropdown-item active" href="./novedades.html">Novedades</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </li>
         </nav>
     </header>
     <main>
@@ -93,11 +110,19 @@
     </main>
     <footer>
         <section class="mainFooter">
-            <a href="../index.html"><img src="../assets/logoDef.png" alt="LogoVillaPilates" class="logoTopBott"></a>
+            <a href="../index.html" id="logoVP">
+                <img src="../assets/logoDef.png" alt="LogoVillaPilates" class="logoTopBott">
+            </a>
             <div class="logosContainer">
-                <a href="https://www.instagram.com/anabella_pilates_y_tpa/"><img src="../assets/instagramLogo.png" alt="instagramLogo"class="fottLogo"></a>
-                <a href="../pages/contacto.html"><img src="../assets/locationLogo.png" alt="locationLogo"class="fottLogo"></a>
-                <a href="../pages/contacto.html"><img src="../assets/mailLogo.png" alt="mailLogo" class="fottLogo"></a>
+                <a href="https://www.instagram.com/anabella_pilates_y_tpa/" id="logoFoot">
+                    <img src="../assets/instagramLogo.png" alt="instagramLogo"class="fottLogo">
+                </a>
+                <a href="../pages/contacto.html" id="logoFoot">
+                    <img src="../assets/locationLogo.png" alt="locationLogo"class="fottLogo">
+                </a>
+                <a href="../pages/contacto.html" id="logoFoot">
+                    <img src="../assets/mailLogo.png" alt="mailLogo" class="fottLogo">
+                </a>
             </div>
         </section>
         <section class="credits">
