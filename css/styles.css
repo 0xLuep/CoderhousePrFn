@@ -20,8 +20,8 @@ header {
 
 
 .logoTopBott {
-    width: 80%;
-    margin: 10%;
+    width: 60%;
+    margin: 5%;
 }
 
 
@@ -37,20 +37,20 @@ nav {
 
 .listContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 5px 0px;
-    padding: 0;
+    padding: 0 9% 0 0;
 }
 
 
 .listContainer li {
     margin: 0px 2%;
-    padding: 10px 0px;
+    padding: 0px 1%;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -64,6 +64,34 @@ nav {
 
 a:hover {
     filter: opacity(0.6);
+}
+
+
+.dropstart {
+    list-style: none;
+}
+
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 0px;
+    --bs-dropdown-font-size: 15px;
+}
+
+
+.btn-light, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #81D618;
+    --bs-btn-color: #81D618;
+    --bs-btn-hover-color: #81D618;
+}
+
+
+.dropdown-item {
+    text-align: center;
+}
+
+
+.dropdown-item.active {
+    background-color: #6a2fa8c2;
 }
 
 
@@ -186,7 +214,7 @@ h3 {
 
 p {
     margin: 2%;
-    padding: 0 7%;
+    padding: 0 3%;
     font-size: 24px;
     text-indent: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -210,10 +238,8 @@ p {
 .imgMed img {
     width: 45%;
     margin: 0px 25px 0 25px;
-    border-width: 5px;
-    border-style: solid;
+    border: 5px solid #7E58A3;
     border-radius: 15%;
-    border-color: #7E58A3;
 }
 
 
@@ -492,8 +518,8 @@ p {
 
 .lastInfoTPA h3, .lastInfoSobreMi h3 {
     text-align: center;
-    padding: 0 40px;
-    margin: 20px 0 40px 0;
+    padding: 0 4%;
+    margin: 3% 0;
 }
 
 .lastInfoTPA p, .lastInfoSobreMi p {
@@ -554,7 +580,7 @@ footer {
 
 
 #logoFoot {
-    width: 4%;
+    width: 2.5%;
 }
 
 
@@ -582,7 +608,7 @@ footer {
 
 .credits p {
     font-size: 15px;
-    margin: 13px;
+    margin: 13px 0;
     color: #FFFFFF;
 }
 
@@ -598,8 +624,56 @@ footer {
 
 
 @media (max-width: 1024px) {
+    .dropdown-menu {
+        font-size: 15px;
+    }
+
+
     #logoVP {
         width: 17%;
+    }
+
+
+    .mainHead .contHeadText h1 {
+        font-size: 55px;
+    }
+
+
+    .hContainer h2 {
+        font-size: 25px;
+    }
+
+
+    h3 {
+        font-size: 30px;
+    }
+
+
+    p {
+        font-size: 19px;
+    }
+
+
+    .rowFotter {
+        height: 3px;
+    }
+
+
+    .credits p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+
+    ul, ol {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 1013px) {
+    .listContainer {
+        padding: 0 6% 0 0;
     }
 }
 
@@ -617,19 +691,17 @@ footer {
         display: none;
     }
 
+}
 
-    .dropstart {
-        list-style: none;
+
+@media (max-width: 912px) {
+    .mainHead .contHeadText h1 {
+        font-size: 50px;
     }
 
 
-    .dropdown-item {
-        text-align: center;
-    }
-
-
-    .dropdown-item.active {
-        background-color: #6a2fa8c2;
+    .hContainer h2 {
+        font-size: 20px;
     }
 }
 
@@ -645,12 +717,186 @@ footer {
     .btn-md {
         display: none;
     }
+
+
+    .imgMed img {
+        border: 3px solid #7E58A3;
+        margin: 0 10px;
+    }
+}
+
+
+@media (max-width: 614px) {
+    .dropdown-menu {
+        font-size: 12px;
+    }
+
+
+    .mainHead .contHeadText h1 {
+        font-size: 30px;
+    }
+
+
+    .hContainer h2 {
+        font-size: 15px;
+    }
+
+    .hContainer {
+        border: 1px dashed #81D618;
+    }
+
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    p {
+        font-size: 15px;
+    }
+
+
+    .rowFotter {
+        height: 2px;
+    }
+
+
+    .credits p {
+        font-size: 10px;
+        margin: 8px 0;
+    }
+
+
+    ul, ol {
+        font-size: 15px;
+    }
 }
 
 
 @media (max-width: 600px) {
     #logoVP {
+        width: 20%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .dropdown-menu {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 453px) {
+    #logoVP {
         width: 25%;
+    }
+
+
+    .dropdown-menu {
+        font-size: 8px;
+    }
+
+
+    .mainHead .contHeadText h1 {
+        font-size: 20px;
+    }
+
+
+    .hContainer h2 {
+        font-size: 10px;
+    }
+
+
+    h3 {
+        font-size: 17px;
+    }
+
+
+    p {
+        font-size: 10px;
+    }
+
+
+    .rowFotter {
+        height: 1px;
+    }
+
+
+    .credits p {
+        font-size: 6px;
+        margin: 4px 0;
+    }
+
+
+    ul, ol {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .btn-group-sm>.btn, .btn-sm {
+        --bs-btn-padding-y: -3px;
+    }
+
+
+    .dropstart .dropdown-toggle::before {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+
+    .btn img {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 386px) {
+    .dropdown-menu {
+        font-size: 7px;
+    }
+
+
+    .mainHead .contHeadText h1 {
+        font-size: 20px;
+    }
+
+
+    .mainHead .contHeadText h1 {
+        font-size: 15px;
+    }
+
+
+    .hContainer h2 {
+        font-size: 8px;
+    }
+
+
+    h3 {
+        font-size: 15px;
+    }
+
+
+    p {
+        font-size: 9px;
+    }
+
+
+    .rowFotter {
+        height: 1px;
+    }
+
+
+    .credits p {
+        font-size: 4px;
+        margin: 3px 0;
+    }
+
+
+    ul, ol {
+        font-size: 9px;
     }
 }
 
