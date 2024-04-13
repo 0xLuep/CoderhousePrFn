@@ -9,7 +9,7 @@
 }
 
 
-@mixin grid($col, $row, $area, $justify, $align, $area) {
+@mixin grid($col, $row, $justify, $align, $area) {
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;

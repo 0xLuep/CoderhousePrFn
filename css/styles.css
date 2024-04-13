@@ -1,18 +1,854 @@
-/* Error: Duplicate argument.
- *    ,
- * 12 | @mixin grid($col, $row, $area, $justify, $align, $area) {
- *    |                                                  ^^^^^
- *    '
- *   sass\utilities\_mixins.scss 12:50  @import
- *   sass\styles.scss 4:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Duplicate argument.\a    \2577 \a 12 \2502  @mixin grid($col, $row, $area, $justify, $align, $area) {\d\a    \2502                                                   ^^^^^\a    \2575 \a   sass\\utilities\\_mixins.scss 12:50  @import\a   sass\\styles.scss 4:9               root stylesheet";
+* {
+  margin: 0%;
 }
+
+#actualPage {
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+a:hover {
+  filter: opacity(0.6);
+}
+
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h3 {
+  margin: 5% 0px 0px 0px;
+  padding-left: 10%;
+  font-size: 35px;
+  color: #7E58A3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  margin: 2%;
+  padding: 0 3%;
+  font-size: 24px;
+  text-indent: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul, ol {
+  margin: 2% 0;
+  padding: 0 0 0 15%;
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.mainRowHead {
+  background-color: #1E3600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.mainRowHead h1 {
+  margin: 0;
+  padding: 0.75%;
+}
+
+#logoVP {
+  width: 13%;
+}
+
+.logoTopBott {
+  width: 60%;
+  margin: 5%;
+}
+
+/*--header / navbar----------------------------------------------------------------*/
+header {
+  background-color: #81D618;
+  display: flex;
+  align-items: center;
+  padding: 0px 2%;
+}
+
+nav {
+  width: 100%;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 5px 0px;
+  padding: 0 9% 0 0;
+}
+
+.listContainer li {
+  margin: 0px 2%;
+  padding: 0px 1%;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.listContainer a, .listContainer a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*--Footer----------------------------------------------------------------*/
+footer {
+  margin: 5% 0px 0px 0px;
+}
+
+#noMargin {
+  margin: 0;
+}
+
+.mainFooter {
+  background-color: #7E58A3;
+  display: flex;
+  align-items: center;
+  padding: 0px 3%;
+}
+
+.logosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.logosContainer a {
+  margin: 0 2%;
+}
+
+.logosContainer a:hover {
+  filter: opacity(0.5);
+}
+
+#logoFoot {
+  width: 2.5%;
+}
+
+.fottLogo {
+  width: 100%;
+}
+
+.credits {
+  background-color: #613D7E;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rowFotter {
+  background-color: #c1a8e2;
+  width: 100%;
+  height: 5px;
+  top: 50px;
+}
+
+.credits p {
+  font-size: 15px;
+  margin: 13px 0;
+  color: #FFFFFF;
+}
+
+/*--MainIndex----------------------------------------------------------------*/
+.mainHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mainHead img {
+  position: relative;
+  border-radius: 0 0 5% 5%;
+  width: 70%;
+}
+
+.contHeadText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60%;
+}
+
+.hContainer {
+  width: 60%;
+  border-style: dashed;
+  border-color: #81D618;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5% 2%;
+}
+
+.hContainer h1, .hContainer h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.h2Container {
+  border-top-style: hidden;
+}
+
+.mainHead .contHeadText h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.hContainer h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.qEsPinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+}
+
+.qEsPinfo h3 {
+  align-self: flex-start;
+}
+
+#slashTopText {
+  padding: 0;
+  margin: 0 0 5% 0;
+  text-align: center;
+}
+
+.qEsPinfo:nth-child(2) {
+  margin-bottom: 7%;
+}
+
+.imgMed {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.imgMed img {
+  width: 45%;
+  margin: 0px 25px 0 25px;
+  border: 5px solid #7E58A3;
+  border-radius: 15%;
+}
+
+.benef {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+/*--TPA----------------------------------------------------------------*/
+.mainVPyTPA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.mainVPyTPA h2 {
+  font-size: 50px;
+  color: #7E58A3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.vpytpaInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3% 0 5% 0;
+}
+
+.vpytpaInfo p {
+  width: 35%;
+  padding: 0;
+  margin: 0;
+}
+
+.benefTPA {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin-bottom: 5%;
+}
+
+.benefTPA div {
+  display: inline-block;
+  width: 400px;
+  margin: 0;
+  padding: 3%;
+  align-self: center;
+}
+
+.benefTPA div h3, .benefTPA div ul {
+  margin: 0 0 5% 0;
+  padding: 0;
+}
+
+.benefTPA div ul {
+  padding-left: 10%;
+}
+
+.benefTPA img {
+  width: 35%;
+  height: 35%;
+  place-self: center;
+  border-radius: 20px;
+  margin: 3%;
+}
+
+.blackRow {
+  background-color: #000000;
+  width: 70%;
+  height: 3px;
+  margin-bottom: 5%;
+}
+
+.lastInfoTPA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+}
+
+.lastInfoTPA h3, .lastInfoSobreMi h3 {
+  text-align: center;
+  padding: 0 4%;
+  margin: 3% 0;
+}
+
+.lastInfoTPA p, .lastInfoSobreMi p {
+  text-align: center;
+}
+
+.lastInfoSobreMi {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+/*--Novedades----------------------------------------------------------------*/
+.mainNotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.not {
+  width: 60%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.not * {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.imgNotCont > img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid blueviolet;
+  border-radius: 10%;
+  margin-bottom: 10%;
+}
+
+.not > h2 {
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 5% 0;
+  color: #684192;
+}
+
+.not > p {
+  padding: 0 3%;
+  margin: 0 0 5% 0;
+}
+
+.not div > p {
+  padding: 0 10px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.not > div {
+  display: flex;
+  align-items: center;
+}
+
+#timeLogo {
+  width: 10%;
+  height: 75%;
+}
+
+/*--Contactos----------------------------------------------------------------*/
+.mainMidCont {
+  background-color: rgba(126, 88, 163, 0.75);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 11.11%);
+  grid-template-rows: repeat(10, 75px);
+}
+
+.mainMidCont img {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+.mapContainer {
+  background-color: #613D7E;
+  width: 100%;
+  border: 5px #613D7E solid;
+  grid-column: 6/9;
+  grid-row: 3/9;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.rowCont {
+  background-color: #ffffff;
+  width: auto;
+  height: 2px;
+  margin: 0 10%;
+  align-self: center;
+  grid-column: 1/6;
+  grid-row: 6;
+}
+
+#rowOnlyMedia {
+  display: none;
+}
+
+.logAndInf {
+  display: flex;
+  width: 100%;
+}
+
+.logAndInf h2 {
+  color: #FFFFFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 0 0 3%;
+  align-self: center;
+  font-size: 20px;
+}
+
+.nearMeInfo {
+  grid-column: 2/5;
+  grid-row: 3;
+}
+
+.whatsappInfo {
+  grid-column: 2/5;
+  grid-row: 4;
+}
+
+.mailInfo {
+  grid-column: 2/5;
+  grid-row: 5;
+}
+
+.mainFollowCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2/5;
+  grid-row: 7/8;
+}
+
+.mainFollowCont h2 {
+  color: #FFFFFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10%;
+  font-size: 40px;
+}
+
+.seguinosImages {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seguinosImages a {
+  width: 60px;
+}
+
+.seguinosImages a img {
+  width: 100%;
+  height: auto;
+}
+
+.locationInfo {
+  grid-column: 6/9;
+  grid-row: 2;
+}
+
+.locationInfo {
+  display: flex;
+  justify-content: center;
+}
+
+#locationLogo {
+  width: 30px;
+}
+
+@media (max-width: 1170px) {
+  #logoVP {
+    width: 15%;
+  }
+}
+@media (max-width: 1024px) {
+  .dropdown-menu {
+    font-size: 15px;
+  }
+  #logoVP {
+    width: 17%;
+  }
+  .mainHead .contHeadText h1 {
+    font-size: 55px;
+  }
+  .hContainer h2, .not > h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 19px;
+  }
+  .rowFotter, .blackRow {
+    height: 3px;
+  }
+  .credits p, .not div > p {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  ul, ol {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1013px) {
+  .listContainer {
+    padding: 0 6% 0 0;
+  }
+}
+@media (min-width: 989px) {
+  .dropstart {
+    display: none;
+  }
+}
+@media (max-width: 988px) {
+  .listContainer {
+    display: none;
+  }
+}
+@media (max-width: 912px) {
+  .mainHead .contHeadText h1 {
+    font-size: 50px;
+  }
+  .hContainer h2, .not > h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .btn-sm {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .rowFotter, .blackRow {
+    height: 2px;
+  }
+  .mainMidCont {
+    display: grid;
+    grid-template-columns: repeat(9, 11.11%);
+    grid-template-rows: repeat(10, 65px);
+  }
+  .mainMidCont img {
+    width: 35px;
+    height: 35px;
+  }
+  .logAndInf h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .btn-md {
+    display: none;
+  }
+  .imgMed img {
+    border: 3px solid #7E58A3;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 710px) {
+  .fottLogo {
+    width: 125%;
+  }
+  .mainMidCont {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(15, 65px);
+  }
+  .nearMeInfo {
+    grid-row: 2;
+  }
+  .whatsappInfo {
+    grid-row: 3;
+  }
+  .mailInfo {
+    grid-row: 4;
+  }
+  #rowOnlyMedia {
+    display: block;
+    grid-row: 5;
+  }
+  .locationInfo {
+    grid-column: 2/5;
+    grid-row: 6;
+  }
+  .mapContainer {
+    grid-column: 2/5;
+    grid-row: 7/12;
+  }
+  .rowCont {
+    grid-row: 12;
+  }
+  .mainFollowCont {
+    grid-row: 13;
+  }
+  .mainMidCont img {
+    width: 30px;
+    height: 30px;
+  }
+  .mainFollowCont h2 {
+    font-size: 33px;
+  }
+  .seguinosImages a {
+    width: 45px;
+  }
+  #locationLogo {
+    width: 20px;
+  }
+}
+@media (max-width: 614px) {
+  .dropdown-menu {
+    font-size: 12px;
+  }
+  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+    font-size: 30px;
+  }
+  .hContainer h2, .not > h2 {
+    font-size: 15px;
+  }
+  .hContainer {
+    border: 1px dashed #81D618;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .credits p, .not div > p {
+    font-size: 10px;
+    margin: 8px 0;
+  }
+  ul, ol {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  #logoVP {
+    width: 20%;
+  }
+}
+@media (max-width: 550px) {
+  .dropdown-menu {
+    font-size: 10px;
+  }
+}
+@media (max-width: 453px) {
+  #logoVP {
+    width: 25%;
+  }
+  .dropdown-menu {
+    font-size: 8px;
+  }
+  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+    font-size: 20px;
+  }
+  .hContainer h2, .not > h2 {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .rowFotter, .blackRow {
+    height: 1px;
+  }
+  .credits p, .not div > p {
+    font-size: 6px;
+    margin: 4px 0;
+  }
+  ul, ol {
+    font-size: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .btn-group-sm > .btn, .btn-sm {
+    --bs-btn-padding-y: -3px;
+  }
+  .dropstart .dropdown-toggle::before {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  .btn img {
+    width: 60%;
+  }
+  .vpytpaInfo {
+    width: 85%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .vpytpaInfo p {
+    width: 100%;
+    padding: 3% 0;
+  }
+  .fottLogo {
+    width: 150%;
+  }
+  .mainMidCont {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(15, 45px);
+  }
+  .logAndInf h2 {
+    font-size: 13px;
+  }
+  .mainMidCont img {
+    width: 20px;
+    height: 20px;
+  }
+  .mainFollowCont h2 {
+    font-size: 20px;
+  }
+  .seguinosImages a {
+    width: 30px;
+  }
+  #locationLogo {
+    width: 15px;
+  }
+}
+@media (max-width: 386px) {
+  .dropdown-menu {
+    font-size: 8px;
+  }
+  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+    font-size: 15px;
+  }
+  .hContainer h2, .not > h2 {
+    font-size: 8px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 8px;
+  }
+  .rowFotter, .blackRow {
+    height: 1px;
+  }
+  .credits p, .not div > p {
+    font-size: 4px;
+    margin: 3px 0;
+  }
+  ul, ol {
+    font-size: 8px;
+  }
+}
+@media (max-width: 320px) {
+  #logoVP {
+    width: 30%;
+  }
+  .fottLogo {
+    width: 150%;
+  }
+}
+.dropstart {
+  list-style: none;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 0px;
+  --bs-dropdown-font-size: 15px;
+}
+
+.btn-light, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  color: #81D618;
+  --bs-btn-color: #81D618;
+  --bs-btn-hover-color: #81D618;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.dropdown-item.active {
+  background-color: rgba(106, 47, 168, 0.7607843137);
+}
+
+.carousel {
+  width: 100%;
+  background-color: #7E58A3;
+  margin-bottom: 5%;
+}
+
+.carousel-item img {
+  border-radius: 5%;
+}
+
+.carousel-outinner-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  width: 40%;
+  align-self: center;
+  padding: 4%;
+}
+
+/*# sourceMappingURL=styles.css.map */
