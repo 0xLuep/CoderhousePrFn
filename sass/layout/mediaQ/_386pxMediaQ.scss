@@ -1,0 +1,41 @@
+@media (max-width: 386px) {
+    .dropdown-menu {
+        font-size: 8px;
+    }
+
+
+    .mainHead .contHeadText h1 , .mainRowHead h1, .mainVPyTPA h2 {
+        font-size: 15px;
+    }
+
+
+    .hContainer h2, .not > h2 {
+        font-size: 8px;
+    }
+
+
+    h3 {
+        font-size: 15px;
+    }
+
+
+    p {
+        font-size: 8px;
+    }
+
+
+    .rowFotter, .blackRow {
+        height: 1px;
+    }
+
+
+    .credits p, .not div > p {
+        font-size: 4px;
+        margin: 3px 0;
+    }
+
+
+    ul, ol {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,40 @@
+/*--header / navbar----------------------------------------------------------------*/
+
+header {
+    background-color: #81D618;
+    display: flex;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+
+nav {
+    width: 100%;
+}
+
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 5px 0px;
+    padding: 0 9% 0 0;
+}
+
+
+.listContainer li {
+    margin: 0px 2%;
+    padding: 0px 1%;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.listContainer a, .listContainer a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
