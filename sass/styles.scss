@@ -1,2 +1,37 @@
 
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/functions";
 
+
+@import "./base/general";
+
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./layout/tpa";
+@import "./layout/sobre_mi";
+@import "./layout/novedades";
+@import "./layout/contacto";
+
+@import "./layout/mediaQ/1170pxMediaQ";
+@import "./layout/mediaQ/1024pxMediaQ";
+@import "./layout/mediaQ/1013pxMediaQ";
+@import "./layout/mediaQ/989pxMediaQ";
+@import "./layout/mediaQ/988pxMediaQ";
+@import "./layout/mediaQ/912pxMediaQ";
+@import "./layout/mediaQ/768pxMediaQ";
+@import "./layout/mediaQ/767pxMediaQ";
+@import "./layout/mediaQ/710pxMediaQ";
+@import "./layout/mediaQ/614pxMediaQ";
+@import "./layout/mediaQ/600pxMediaQ";
+@import "./layout/mediaQ/550pxMediaQ";
+@import "./layout/mediaQ/453pxMediaQ";
+@import "./layout/mediaQ/425pxMediaQ";
+@import "./layout/mediaQ/386pxMediaQ";
+@import "./layout/mediaQ/320pxMediaQ";
+
+
+@import "./components/bootstrap";

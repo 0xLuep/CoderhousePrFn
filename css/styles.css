@@ -1,3 +1,18 @@
+/* Error: Duplicate argument.
+ *    ,
+ * 12 | @mixin grid($col, $row, $area, $justify, $align, $area) {
+ *    |                                                  ^^^^^
+ *    '
+ *   sass\utilities\_mixins.scss 12:50  @import
+ *   sass\styles.scss 4:9               root stylesheet */
 
-
-/*# sourceMappingURL=styles.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Duplicate argument.\a    \2577 \a 12 \2502  @mixin grid($col, $row, $area, $justify, $align, $area) {\d\a    \2502                                                   ^^^^^\a    \2575 \a   sass\\utilities\\_mixins.scss 12:50  @import\a   sass\\styles.scss 4:9               root stylesheet";
+}
