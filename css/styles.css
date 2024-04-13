@@ -54,7 +54,6 @@ main {
   width: 100%;
   height: 10%;
 }
-
 .mainRowHead h1 {
   margin: 0;
   padding: 0.75%;
@@ -76,12 +75,10 @@ header {
   align-items: center;
   padding: 0px 2%;
 }
-
-nav {
+header nav {
   width: 100%;
 }
-
-.listContainer {
+header nav .listContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,16 +87,18 @@ nav {
   margin: 5px 0px;
   padding: 0 9% 0 0;
 }
-
-.listContainer li {
+header nav .listContainer li {
   margin: 0px 2%;
   padding: 0px 1%;
   color: #FFFFFF;
   font-size: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.listContainer a, .listContainer a:visited {
+header nav .listContainer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header nav .listContainer a:visited {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -108,39 +107,33 @@ nav {
 footer {
   margin: 5% 0px 0px 0px;
 }
-
-#noMargin {
-  margin: 0;
-}
-
-.mainFooter {
+footer .mainFooter {
   background-color: #7E58A3;
   display: flex;
   align-items: center;
   padding: 0px 3%;
 }
-
-.logosContainer {
+footer .mainFooter .logosContainer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
 }
-
-.logosContainer a {
+footer .mainFooter .logosContainer a {
   margin: 0 2%;
 }
-
-.logosContainer a:hover {
+footer .mainFooter .logosContainer a:hover {
   filter: opacity(0.5);
 }
-
-#logoFoot {
+footer .mainFooter .logosContainer a .fottLogo {
+  width: 100%;
+}
+footer .mainFooter .logosContainer #logoFoot {
   width: 2.5%;
 }
 
-.fottLogo {
-  width: 100%;
+#noMargin {
+  margin: 0;
 }
 
 .credits {
@@ -149,35 +142,31 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-
-.rowFotter {
+.credits p {
+  font-size: 15px;
+  margin: 13px 0;
+  color: #FFFFFF;
+}
+.credits .rowFotter {
   background-color: #c1a8e2;
   width: 100%;
   height: 5px;
   top: 50px;
 }
 
-.credits p {
-  font-size: 15px;
-  margin: 13px 0;
-  color: #FFFFFF;
-}
-
-/*--MainIndex----------------------------------------------------------------*/
+/*--Index----------------------------------------------------------------*/
 .mainHead {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-
 .mainHead img {
   position: relative;
   border-radius: 0 0 5% 5%;
   width: 70%;
 }
-
-.contHeadText {
+.mainHead .contHeadText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,8 +174,11 @@ footer {
   position: absolute;
   width: 60%;
 }
-
-.hContainer {
+.mainHead .contHeadText h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+.mainHead .contHeadText .hContainer {
   width: 60%;
   border-style: dashed;
   border-color: #81D618;
@@ -195,25 +187,17 @@ footer {
   justify-content: center;
   padding: 3.5% 2%;
 }
-
-.hContainer h1, .hContainer h2 {
+.mainHead .contHeadText .hContainer h1, .mainHead .contHeadText .hContainer h2 {
   color: #FFFFFF;
   text-align: center;
   margin: 0 10%;
 }
-
-.h2Container {
-  border-top-style: hidden;
-}
-
-.mainHead .contHeadText h1 {
-  font-size: 70px;
-  font-weight: normal;
-}
-
-.hContainer h2 {
+.mainHead .contHeadText .hContainer h2 {
   font-size: 30px;
   font-weight: normal;
+}
+.mainHead .contHeadText .h2Container {
+  border-top-style: hidden;
 }
 
 .qEsPinfo {
@@ -223,17 +207,9 @@ footer {
   flex-direction: column;
   width: 85%;
 }
-
 .qEsPinfo h3 {
   align-self: flex-start;
 }
-
-#slashTopText {
-  padding: 0;
-  margin: 0 0 5% 0;
-  text-align: center;
-}
-
 .qEsPinfo:nth-child(2) {
   margin-bottom: 7%;
 }
@@ -245,7 +221,6 @@ footer {
   justify-content: center;
   margin-bottom: 2%;
 }
-
 .imgMed img {
   width: 45%;
   margin: 0px 25px 0 25px;
@@ -260,30 +235,11 @@ footer {
 }
 
 /*--TPA----------------------------------------------------------------*/
-.mainVPyTPA {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4%;
-}
-
-.mainVPyTPA h2 {
-  font-size: 50px;
-  color: #7E58A3;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.vpytpaInfo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 3% 0 5% 0;
-}
-
-.vpytpaInfo p {
-  width: 35%;
-  padding: 0;
-  margin: 0;
+.blackRow {
+  background-color: #000000;
+  width: 70%;
+  height: 3px;
+  margin-bottom: 5%;
 }
 
 .benefTPA {
@@ -292,7 +248,6 @@ footer {
   width: 85%;
   margin-bottom: 5%;
 }
-
 .benefTPA div {
   display: inline-block;
   width: 400px;
@@ -300,29 +255,19 @@ footer {
   padding: 3%;
   align-self: center;
 }
-
 .benefTPA div h3, .benefTPA div ul {
   margin: 0 0 5% 0;
   padding: 0;
 }
-
 .benefTPA div ul {
   padding-left: 10%;
 }
-
 .benefTPA img {
   width: 35%;
   height: 35%;
   place-self: center;
   border-radius: 20px;
   margin: 3%;
-}
-
-.blackRow {
-  background-color: #000000;
-  width: 70%;
-  height: 3px;
-  margin-bottom: 5%;
 }
 
 .lastInfoTPA {
@@ -332,14 +277,42 @@ footer {
   flex-direction: column;
   width: 85%;
 }
-
-.lastInfoTPA h3, .lastInfoSobreMi h3 {
+.lastInfoTPA h3 {
   text-align: center;
   padding: 0 4%;
   margin: 3% 0;
 }
+.lastInfoTPA p {
+  text-align: center;
+}
 
-.lastInfoTPA p, .lastInfoSobreMi p {
+/*--SobreMi----------------------------------------------------------------*/
+.mainVPyTPA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+.mainVPyTPA h2 {
+  font-size: 50px;
+  color: #7E58A3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.mainVPyTPA .vpytpaInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3% 0 5% 0;
+}
+.mainVPyTPA .vpytpaInfo p {
+  width: 35%;
+  padding: 0;
+  margin: 0;
+}
+
+#slashTopText {
+  padding: 0;
+  margin: 0 0 5% 0;
   text-align: center;
 }
 
@@ -348,6 +321,14 @@ footer {
   flex-direction: column;
   width: 85%;
 }
+.lastInfoSobreMi h3 {
+  text-align: center;
+  padding: 0 4%;
+  margin: 3% 0;
+}
+.lastInfoSobreMi p {
+  text-align: center;
+}
 
 /*--Novedades----------------------------------------------------------------*/
 .mainNotContainer {
@@ -355,8 +336,7 @@ footer {
   flex-wrap: wrap;
   width: 85%;
 }
-
-.not {
+.mainNotContainer .not {
   width: 60%;
   max-width: 300px;
   margin: 10% auto;
@@ -364,41 +344,35 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-.not * {
+.mainNotContainer .not * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.imgNotCont > img {
+.mainNotContainer .not .imgNotCont > img {
   width: 100%;
   height: 100%;
   border: 2px solid blueviolet;
   border-radius: 10%;
   margin-bottom: 10%;
 }
-
-.not > h2 {
+.mainNotContainer .not > h2 {
   font-size: 35px;
   width: 100%;
   text-align: center;
   margin: 0 0 5% 0;
   color: #684192;
 }
-
-.not > p {
+.mainNotContainer .not > p {
   padding: 0 3%;
   margin: 0 0 5% 0;
 }
-
-.not div > p {
+.mainNotContainer .not > div {
+  display: flex;
+  align-items: center;
+}
+.mainNotContainer .not > div > p {
   padding: 0 10px;
   margin: 0;
   font-size: 20px;
-}
-
-.not > div {
-  display: flex;
-  align-items: center;
 }
 
 #timeLogo {
@@ -414,27 +388,35 @@ footer {
   grid-template-columns: repeat(9, 11.11%);
   grid-template-rows: repeat(10, 75px);
 }
-
 .mainMidCont img {
   width: 40px;
   height: 40px;
   align-self: center;
 }
-
-.mapContainer {
-  background-color: #613D7E;
+.mainMidCont .logAndInf {
+  display: flex;
   width: 100%;
-  border: 5px #613D7E solid;
-  grid-column: 6/9;
-  grid-row: 3/9;
 }
-
-#map {
-  width: 100%;
-  height: 100%;
+.mainMidCont .logAndInf h2 {
+  color: #FFFFFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 0 0 3%;
+  align-self: center;
+  font-size: 20px;
 }
-
-.rowCont {
+.mainMidCont .nearMeInfo {
+  grid-column: 2/5;
+  grid-row: 3;
+}
+.mainMidCont .whatsappInfo {
+  grid-column: 2/5;
+  grid-row: 4;
+}
+.mainMidCont .mailInfo {
+  grid-column: 2/5;
+  grid-row: 5;
+}
+.mainMidCont .rowCont {
   background-color: #ffffff;
   width: auto;
   height: 2px;
@@ -443,81 +425,53 @@ footer {
   grid-column: 1/6;
   grid-row: 6;
 }
-
-#rowOnlyMedia {
-  display: none;
-}
-
-.logAndInf {
-  display: flex;
-  width: 100%;
-}
-
-.logAndInf h2 {
-  color: #FFFFFF;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 0 0 0 3%;
-  align-self: center;
-  font-size: 20px;
-}
-
-.nearMeInfo {
-  grid-column: 2/5;
-  grid-row: 3;
-}
-
-.whatsappInfo {
-  grid-column: 2/5;
-  grid-row: 4;
-}
-
-.mailInfo {
-  grid-column: 2/5;
-  grid-row: 5;
-}
-
-.mainFollowCont {
+.mainMidCont .mainFollowCont {
   display: flex;
   flex-direction: column;
   align-items: center;
   grid-column: 2/5;
   grid-row: 7/8;
 }
-
-.mainFollowCont h2 {
+.mainMidCont .mainFollowCont h2 {
   color: #FFFFFF;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 10%;
   font-size: 40px;
 }
-
-.seguinosImages {
+.mainMidCont .mainFollowCont .seguinosImages {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-
-.seguinosImages a {
+.mainMidCont .mainFollowCont .seguinosImages a {
   width: 60px;
 }
-
-.seguinosImages a img {
+.mainMidCont .mainFollowCont .seguinosImages a img {
   width: 100%;
   height: auto;
 }
-
-.locationInfo {
+.mainMidCont #rowOnlyMedia {
+  display: none;
+}
+.mainMidCont .locationInfo {
   grid-column: 6/9;
   grid-row: 2;
-}
-
-.locationInfo {
   display: flex;
   justify-content: center;
 }
-
-#locationLogo {
+.mainMidCont .locationInfo #locationLogo {
   width: 30px;
+}
+.mainMidCont .mapContainer {
+  background-color: #613D7E;
+  width: 100%;
+  border: 5px #613D7E solid;
+  grid-column: 6/9;
+  grid-row: 3/9;
+}
+.mainMidCont .mapContainer #map {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1170px) {
@@ -645,12 +599,12 @@ footer {
   .mainFollowCont {
     grid-row: 13;
   }
+  .mainFollowCont h2 {
+    font-size: 33px;
+  }
   .mainMidCont img {
     width: 30px;
     height: 30px;
-  }
-  .mainFollowCont h2 {
-    font-size: 33px;
   }
   .seguinosImages a {
     width: 45px;
@@ -666,24 +620,18 @@ footer {
   .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
     font-size: 30px;
   }
-  .hContainer h2, .not > h2 {
-    font-size: 15px;
-  }
   .hContainer {
     border: 1px dashed #81D618;
+  }
+  p, ul, ol, .hContainer h2, .not > h2 {
+    font-size: 15px;
   }
   h3 {
     font-size: 24px;
   }
-  p {
-    font-size: 15px;
-  }
   .credits p, .not div > p {
     font-size: 10px;
     margin: 8px 0;
-  }
-  ul, ol {
-    font-size: 15px;
   }
 }
 @media (max-width: 600px) {
@@ -706,14 +654,11 @@ footer {
   .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
     font-size: 20px;
   }
-  .hContainer h2, .not > h2 {
+  p, ul, ol, .hContainer h2, .not > h2 {
     font-size: 10px;
   }
   h3 {
     font-size: 17px;
-  }
-  p {
-    font-size: 10px;
   }
   .rowFotter, .blackRow {
     height: 1px;
@@ -721,9 +666,6 @@ footer {
   .credits p, .not div > p {
     font-size: 6px;
     margin: 4px 0;
-  }
-  ul, ol {
-    font-size: 10px;
   }
 }
 @media (max-width: 425px) {
@@ -754,12 +696,12 @@ footer {
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(15, 45px);
   }
-  .logAndInf h2 {
-    font-size: 13px;
-  }
   .mainMidCont img {
     width: 20px;
     height: 20px;
+  }
+  .logAndInf h2 {
+    font-size: 13px;
   }
   .mainFollowCont h2 {
     font-size: 20px;
@@ -778,14 +720,11 @@ footer {
   .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
     font-size: 15px;
   }
-  .hContainer h2, .not > h2 {
+  p, ul, ol, .hContainer h2, .not > h2 {
     font-size: 8px;
   }
   h3 {
     font-size: 15px;
-  }
-  p {
-    font-size: 8px;
   }
   .rowFotter, .blackRow {
     height: 1px;
@@ -793,9 +732,6 @@ footer {
   .credits p, .not div > p {
     font-size: 4px;
     margin: 3px 0;
-  }
-  ul, ol {
-    font-size: 8px;
   }
 }
 @media (max-width: 320px) {

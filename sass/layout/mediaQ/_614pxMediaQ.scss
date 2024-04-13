@@ -3,38 +3,24 @@
         font-size: 12px;
     }
 
-
     .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
         font-size: 30px;
-    }
-
-
-    .hContainer h2, .not > h2 {
-        font-size: 15px;
     }
 
     .hContainer {
         border: 1px dashed #81D618;
     }
 
+    p, ul, ol, .hContainer h2, .not > h2 {
+        font-size: 15px;
+    }
 
     h3 {
         font-size: 24px;
     }
 
-
-    p {
-        font-size: 15px;
-    }
-
-
     .credits p, .not div > p {
         font-size: 10px;
         margin: 8px 0;
-    }
-
-
-    ul, ol {
-        font-size: 15px;
     }
 }

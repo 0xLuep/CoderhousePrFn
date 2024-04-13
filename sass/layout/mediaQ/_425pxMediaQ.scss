@@ -3,63 +3,50 @@
         --bs-btn-padding-y: -3px;
     }
 
-
     .dropstart .dropdown-toggle::before {
         margin-left: 5px;
         margin-right: 0;
     }
 
-
     .btn img {
         width: 60%;
     }
-
 
     .vpytpaInfo {
         width: 85%;
         flex-direction: column;
         margin-top: 0;
+        p {
+            width: 100%;
+            padding: 3% 0;
+        }
     }
-
-
-    .vpytpaInfo p {
-        width: 100%;
-        padding: 3% 0;
-    }
-
 
     .fottLogo {
         width: 150%;
     }
 
-
     .mainMidCont {
         display: grid;
         grid-template-columns: repeat(5, 20%);
         grid-template-rows: repeat(15, 45px);
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
-
 
     .logAndInf h2 {
         font-size: 13px;
     }
 
-
-    .mainMidCont img {
-        width: 20px;
-        height: 20px;
-    }
-
-
     .mainFollowCont h2 {
         font-size: 20px;
     }
 
-
     .seguinosImages a {
         width: 30px;
     }
-
 
     #locationLogo {
         width: 15px;
