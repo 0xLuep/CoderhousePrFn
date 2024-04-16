@@ -3,7 +3,15 @@
         width: 30%;
     }
 
-    .fottLogo {
-        width: 150%;
+    footer {
+        .mainFooter {
+            .logosContainer {
+                a {
+                    .fottLogo {
+                        width: 150%;
+                    }
+                }
+            }
+        }
     }
 }

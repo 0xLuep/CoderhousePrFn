@@ -7,11 +7,47 @@
         font-size: 8px;
     }
 
-    .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
-        font-size: 20px;
+    .mainHead {
+        .contHeadText {
+            h1 {
+                font-size: 20px;
+            }
+            .hContainer{
+                border: 1px dashed #81D618;
+                h2 {
+                    font-size: 10px;
+                }
+            }
+        }
     }
 
-    p, ul, ol, .hContainer h2, .not > h2 {
+    .mainRowHead {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .mainVPyTPA {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .mainNotContainer {
+        .not {
+            & > h2 {
+                font-size: 10px;
+            }
+            div {
+                & > p {
+                    font-size: 6px;
+                    margin: 4px 0;
+                }
+            }
+        }
+    }
+
+    p, ul, ol {
         font-size: 10px;
     }
 
@@ -19,12 +55,17 @@
         font-size: 17px;
     }
 
-    .rowFotter, .blackRow  {
+    .blackRow  {
         height: 1px;
     }
 
-    .credits p, .not div > p {
-        font-size: 6px;
-        margin: 4px 0;
+    .credits {
+        p {
+            font-size: 6px;
+            margin: 4px 0;
+        }
+        .rowFotter {
+            height: 1px;
+        }
     }
 }

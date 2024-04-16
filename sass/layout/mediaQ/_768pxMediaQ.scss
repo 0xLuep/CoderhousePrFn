@@ -5,21 +5,26 @@
 }
 
 @media (max-width: 768px) {
-    .rowFotter, .blackRow {
+    .credits {
+        .rowFotter {
+            height: 2px;
+        }
+    }
+
+    .blackRow {
         height: 2px;
     }
 
     .mainMidCont {
-        display: grid;
-        grid-template-columns: repeat(9, 11.11%);
-        grid-template-rows: repeat(10, 65px);
+        @include grid (repeat(9, 11.11%), repeat(10, 65px), none, none, none);
         img {
             width: 35px;
             height: 35px;
         }
-    }
-
-    .logAndInf h2 {
-        font-size: 18px;
+        .logAndInf {
+            h2 {
+                font-size: 18px;
+            }
+        }
     }
 }

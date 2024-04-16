@@ -1,54 +1,64 @@
 @media (max-width: 425px) {
-    .btn-group-sm>.btn, .btn-sm {
+    .btn-group-sm > .btn, .btn-sm {
         --bs-btn-padding-y: -3px;
     }
 
-    .dropstart .dropdown-toggle::before {
-        margin-left: 5px;
-        margin-right: 0;
-    }
-
-    .btn img {
-        width: 60%;
-    }
-
-    .vpytpaInfo {
-        width: 85%;
-        flex-direction: column;
-        margin-top: 0;
-        p {
-            width: 100%;
-            padding: 3% 0;
+    .dropstart {
+        .dropdown-toggle::before {
+            margin-left: 5px;
+            margin-right: 0;
         }
     }
 
-    .fottLogo {
-        width: 150%;
+    .btn {
+        img {
+            width: 60%;
+        }
+    }
+
+    .mainVPyTPA {
+        .vpytpaInfo {
+            width: 85%;
+            flex-direction: column;
+            margin-top: 0;
+            p {
+                width: 100%;
+                padding: 3% 0;
+            }
+        }
+    }
+
+    footer {
+        .mainFooter {
+            .logosContainer {
+                a {
+                    .fottLogo {
+                        width: 150%;
+                    }
+                }
+            }
+        }
     }
 
     .mainMidCont {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        grid-template-rows: repeat(15, 45px);
+        @include grid (repeat(5, 20%), repeat(15, 45px), none, none, none);
         img {
             width: 20px;
             height: 20px;
         }
-    }
-
-    .logAndInf h2 {
-        font-size: 13px;
-    }
-
-    .mainFollowCont h2 {
-        font-size: 20px;
-    }
-
-    .seguinosImages a {
-        width: 30px;
-    }
-
-    #locationLogo {
-        width: 15px;
+        .logAndInf h2 {
+            font-size: 13px;
+        }
+        .mainFollowCont h2 {
+            font-size: 20px;
+        }
+        .seguinosImages a {
+            width: 30px;
+        }
+        .locationInfo {
+            #locationLogo {
+                width: 15px;
+            }
+        }
     }
 }

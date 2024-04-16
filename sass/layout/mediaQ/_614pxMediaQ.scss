@@ -3,15 +3,47 @@
         font-size: 12px;
     }
 
-    .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
-        font-size: 30px;
+    .mainHead {
+        .contHeadText {
+            h1 {
+                font-size: 30px;
+            }
+            .hContainer{
+                border: 1px dashed #81D618;
+                h2 {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 
-    .hContainer {
-        border: 1px dashed #81D618;
+    .mainRowHead {
+        h1 {
+            font-size: 30px;
+        }
     }
 
-    p, ul, ol, .hContainer h2, .not > h2 {
+    .mainVPyTPA {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .mainNotContainer {
+        .not {
+            & > h2 {
+                font-size: 15px;
+            }
+            div {
+                & > p {
+                    font-size: 10px;
+                    margin: 8px 0;
+                }
+            }
+        }
+    }
+
+    p, ul, ol {
         font-size: 15px;
     }
 
@@ -19,8 +51,10 @@
         font-size: 24px;
     }
 
-    .credits p, .not div > p {
-        font-size: 10px;
-        margin: 8px 0;
+    .credits {
+        p {
+            font-size: 10px;
+            margin: 8px 0;
+        }
     }
 }

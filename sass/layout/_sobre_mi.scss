@@ -1,9 +1,7 @@
-/*--SobreMi----------------------------------------------------------------*/
+/*-------------------------------SobreMi-----------------------------------*/
 
 .mainVPyTPA {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, none, center, none, none);
     margin-top: 4%;
     h2 {
         font-size: 50px;
@@ -11,9 +9,7 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .vpytpaInfo {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (row, space-evenly, center, none, none);
         margin: 3% 0 5% 0;
         p {
             width: 35%;
@@ -30,8 +26,7 @@
 }
 
 .lastInfoSobreMi {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, none, none, none, none);
     width: 85%;
     h3 {
         text-align: center;

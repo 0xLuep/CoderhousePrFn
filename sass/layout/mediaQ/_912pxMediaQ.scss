@@ -1,9 +1,22 @@
 @media (max-width: 912px) {
-    .mainHead .contHeadText h1 {
-        font-size: 50px;
+    .mainHead {
+        .contHeadText {
+            h1 {
+                font-size: 50px;
+            }
+            .hContainer{
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
-    .hContainer h2, .not > h2 {
-        font-size: 20px;
+    .mainNotContainer {
+        .not {
+            & > h2 {
+                font-size: 20px;
+            }
+        }
     }
 }

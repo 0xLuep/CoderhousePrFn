@@ -1,4 +1,4 @@
-/*--TPA----------------------------------------------------------------*/
+/*-------------------------------TPA-----------------------------------*/
 
 .blackRow {
     background-color: #000000;
@@ -8,8 +8,7 @@
 }
 
 .benefTPA {
-    display: flex;
-    justify-content: center;
+    @include flex (row, center, none, none, none);
     width: 85%;
     margin-bottom: 5%;
     div {
@@ -36,10 +35,7 @@
 }
 
 .lastInfoTPA {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flex (column, center, center, none, none);
     width: 85%;
     h3 {
         text-align: center;

@@ -1,3 +1,7 @@
+/*-------------------------HEADER-------------------------------*/
+/*-------------------------MAIN-------------------------------*/
+/*-------------------------FOOTER-------------------------------*/
+/*---------------COLOURS---------------*/
 * {
   margin: 0%;
 }
@@ -40,17 +44,22 @@ ul, ol {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: none;
+  gap: none;
   margin: 0;
 }
 
 .mainRowHead {
-  background-color: #1E3600;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
+  background-color: #1E3600;
   width: 100%;
   height: 10%;
 }
@@ -68,11 +77,15 @@ main {
   margin: 5%;
 }
 
-/*--header / navbar----------------------------------------------------------------*/
+/*-------------------------------header / navbar----------------------------------*/
 header {
   background-color: #81D618;
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
   padding: 0px 2%;
 }
 header nav {
@@ -80,9 +93,11 @@ header nav {
 }
 header nav .listContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: none;
   list-style-type: none;
   margin: 5px 0px;
   padding: 0 9% 0 0;
@@ -103,20 +118,27 @@ header nav .listContainer a:visited {
   color: #FFFFFF;
 }
 
-/*--Footer----------------------------------------------------------------*/
+/*-------------------------------Footer-----------------------------------*/
 footer {
   margin: 5% 0px 0px 0px;
 }
 footer .mainFooter {
-  background-color: #7E58A3;
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
+  background-color: #7E58A3;
   padding: 0px 3%;
 }
 footer .mainFooter .logosContainer {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
   width: 100%;
 }
 footer .mainFooter .logosContainer a {
@@ -137,10 +159,13 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 
 .credits {
-  background-color: #613D7E;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
+  background-color: #613D7E;
 }
 .credits p {
   font-size: 15px;
@@ -154,11 +179,14 @@ footer .mainFooter .logosContainer #logoFoot {
   top: 50px;
 }
 
-/*--Index----------------------------------------------------------------*/
+/*------------------------------Index------------------------------------*/
 .mainHead {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
   width: 100%;
 }
 .mainHead img {
@@ -169,8 +197,10 @@ footer .mainFooter .logosContainer #logoFoot {
 .mainHead .contHeadText {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
   position: absolute;
   width: 60%;
 }
@@ -179,12 +209,15 @@ footer .mainFooter .logosContainer #logoFoot {
   font-weight: normal;
 }
 .mainHead .contHeadText .hContainer {
-  width: 60%;
-  border-style: dashed;
-  border-color: #81D618;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
+  width: 60%;
+  border-style: dashed;
+  border-color: #81D618;
   padding: 3.5% 2%;
 }
 .mainHead .contHeadText .hContainer h1, .mainHead .contHeadText .hContainer h2 {
@@ -202,9 +235,11 @@ footer .mainFooter .logosContainer #logoFoot {
 
 .qEsPinfo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: none;
+  gap: none;
   width: 85%;
 }
 .qEsPinfo h3 {
@@ -216,9 +251,12 @@ footer .mainFooter .logosContainer #logoFoot {
 
 .imgMed {
   display: flex;
-  width: 85%;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
+  width: 85%;
   margin-bottom: 2%;
 }
 .imgMed img {
@@ -231,10 +269,14 @@ footer .mainFooter .logosContainer #logoFoot {
 .benef {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
   width: 85%;
 }
 
-/*--TPA----------------------------------------------------------------*/
+/*-------------------------------TPA-----------------------------------*/
 .blackRow {
   background-color: #000000;
   width: 70%;
@@ -244,7 +286,11 @@ footer .mainFooter .logosContainer #logoFoot {
 
 .benefTPA {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
   width: 85%;
   margin-bottom: 5%;
 }
@@ -272,9 +318,11 @@ footer .mainFooter .logosContainer #logoFoot {
 
 .lastInfoTPA {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
   width: 85%;
 }
 .lastInfoTPA h3 {
@@ -286,11 +334,14 @@ footer .mainFooter .logosContainer #logoFoot {
   text-align: center;
 }
 
-/*--SobreMi----------------------------------------------------------------*/
+/*-------------------------------SobreMi-----------------------------------*/
 .mainVPyTPA {
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
   margin-top: 4%;
 }
 .mainVPyTPA h2 {
@@ -300,8 +351,11 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 .mainVPyTPA .vpytpaInfo {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
   margin: 3% 0 5% 0;
 }
 .mainVPyTPA .vpytpaInfo p {
@@ -319,6 +373,10 @@ footer .mainFooter .logosContainer #logoFoot {
 .lastInfoSobreMi {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
   width: 85%;
 }
 .lastInfoSobreMi h3 {
@@ -330,19 +388,27 @@ footer .mainFooter .logosContainer #logoFoot {
   text-align: center;
 }
 
-/*--Novedades----------------------------------------------------------------*/
+/*-------------------------------Novedades-----------------------------------*/
 .mainNotContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
   flex-wrap: wrap;
+  gap: none;
   width: 85%;
 }
 .mainNotContainer .not {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
   width: 60%;
   max-width: 300px;
   margin: 10% auto;
   padding: 0 1%;
-  display: flex;
-  flex-direction: column;
 }
 .mainNotContainer .not * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -367,7 +433,11 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 .mainNotContainer .not > div {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
+  gap: none;
 }
 .mainNotContainer .not > div > p {
   padding: 0 10px;
@@ -380,13 +450,16 @@ footer .mainFooter .logosContainer #logoFoot {
   height: 75%;
 }
 
-/*--Contactos----------------------------------------------------------------*/
+/*------------------------------Contactos------------------------------------*/
 .mainMidCont {
   background-color: rgba(126, 88, 163, 0.75);
   width: 100%;
   display: grid;
   grid-template-columns: repeat(9, 11.11%);
   grid-template-rows: repeat(10, 75px);
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: none;
 }
 .mainMidCont img {
   width: 40px;
@@ -395,6 +468,11 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 .mainMidCont .logAndInf {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
   width: 100%;
 }
 .mainMidCont .logAndInf h2 {
@@ -405,32 +483,62 @@ footer .mainFooter .logosContainer #logoFoot {
   font-size: 20px;
 }
 .mainMidCont .nearMeInfo {
-  grid-column: 2/5;
+  grid-column: 2 / 5;
   grid-row: 3;
 }
 .mainMidCont .whatsappInfo {
-  grid-column: 2/5;
+  grid-column: 2 / 5;
   grid-row: 4;
 }
 .mainMidCont .mailInfo {
-  grid-column: 2/5;
+  grid-column: 2 / 5;
   grid-row: 5;
 }
 .mainMidCont .rowCont {
+  grid-column: 1 / 6;
+  grid-row: 6;
   background-color: #ffffff;
   width: auto;
   height: 2px;
   margin: 0 10%;
   align-self: center;
-  grid-column: 1/6;
-  grid-row: 6;
+}
+.mainMidCont #rowOnlyMedia {
+  display: none;
+}
+.mainMidCont .locationInfo {
+  grid-column: 6 / 9;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
+}
+.mainMidCont .locationInfo #locationLogo {
+  width: 30px;
+}
+.mainMidCont .mapContainer {
+  grid-column: 6 / 9;
+  grid-row: 3 / 9;
+  background-color: #613D7E;
+  width: 100%;
+  border: 5px #613D7E solid;
+}
+.mainMidCont .mapContainer #map {
+  width: 100%;
+  height: 100%;
 }
 .mainMidCont .mainFollowCont {
+  grid-column: 2 / 5;
+  grid-row: 7 / 8;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
-  grid-column: 2/5;
-  grid-row: 7/8;
+  flex-wrap: none;
+  gap: none;
 }
 .mainMidCont .mainFollowCont h2 {
   color: #FFFFFF;
@@ -441,7 +549,11 @@ footer .mainFooter .logosContainer #logoFoot {
 .mainMidCont .mainFollowCont .seguinosImages {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
 }
 .mainMidCont .mainFollowCont .seguinosImages a {
   width: 60px;
@@ -449,29 +561,6 @@ footer .mainFooter .logosContainer #logoFoot {
 .mainMidCont .mainFollowCont .seguinosImages a img {
   width: 100%;
   height: auto;
-}
-.mainMidCont #rowOnlyMedia {
-  display: none;
-}
-.mainMidCont .locationInfo {
-  grid-column: 6/9;
-  grid-row: 2;
-  display: flex;
-  justify-content: center;
-}
-.mainMidCont .locationInfo #locationLogo {
-  width: 30px;
-}
-.mainMidCont .mapContainer {
-  background-color: #613D7E;
-  width: 100%;
-  border: 5px #613D7E solid;
-  grid-column: 6/9;
-  grid-row: 3/9;
-}
-.mainMidCont .mapContainer #map {
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 1170px) {
@@ -489,8 +578,21 @@ footer .mainFooter .logosContainer #logoFoot {
   .mainHead .contHeadText h1 {
     font-size: 55px;
   }
-  .hContainer h2, .not > h2 {
+  .mainHead .contHeadText .hContainer h2 {
     font-size: 25px;
+  }
+  .mainNotContainer .not > h2 {
+    font-size: 25px;
+  }
+  .credits .rowFotter {
+    height: 3px;
+  }
+  .blackRow {
+    height: 3px;
+  }
+  .credits p, .not div > p {
+    font-size: 12px;
+    margin: 10px 0;
   }
   h3 {
     font-size: 30px;
@@ -498,29 +600,22 @@ footer .mainFooter .logosContainer #logoFoot {
   p {
     font-size: 19px;
   }
-  .rowFotter, .blackRow {
-    height: 3px;
-  }
-  .credits p, .not div > p {
-    font-size: 12px;
-    margin: 10px 0;
-  }
   ul, ol {
     font-size: 19px;
   }
 }
 @media (max-width: 1013px) {
-  .listContainer {
+  header nav .listContainer {
     padding: 0 6% 0 0;
   }
 }
 @media (min-width: 989px) {
-  .dropstart {
+  header nav .dropstart {
     display: none;
   }
 }
 @media (max-width: 988px) {
-  .listContainer {
+  header nav .listContainer {
     display: none;
   }
 }
@@ -528,7 +623,10 @@ footer .mainFooter .logosContainer #logoFoot {
   .mainHead .contHeadText h1 {
     font-size: 50px;
   }
-  .hContainer h2, .not > h2 {
+  .mainHead .contHeadText .hContainer h2 {
+    font-size: 20px;
+  }
+  .mainNotContainer .not > h2 {
     font-size: 20px;
   }
 }
@@ -538,19 +636,25 @@ footer .mainFooter .logosContainer #logoFoot {
   }
 }
 @media (max-width: 768px) {
-  .rowFotter, .blackRow {
+  .credits .rowFotter {
+    height: 2px;
+  }
+  .blackRow {
     height: 2px;
   }
   .mainMidCont {
     display: grid;
     grid-template-columns: repeat(9, 11.11%);
     grid-template-rows: repeat(10, 65px);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: none;
   }
   .mainMidCont img {
     width: 35px;
     height: 35px;
   }
-  .logAndInf h2 {
+  .mainMidCont .logAndInf h2 {
     font-size: 18px;
   }
 }
@@ -564,72 +668,98 @@ footer .mainFooter .logosContainer #logoFoot {
   }
 }
 @media (max-width: 710px) {
-  .fottLogo {
+  footer .mainFooter .logosContainer a .fottLogo {
     width: 125%;
   }
   .mainMidCont {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(15, 65px);
-  }
-  .nearMeInfo {
-    grid-row: 2;
-  }
-  .whatsappInfo {
-    grid-row: 3;
-  }
-  .mailInfo {
-    grid-row: 4;
-  }
-  #rowOnlyMedia {
-    display: block;
-    grid-row: 5;
-  }
-  .locationInfo {
-    grid-column: 2/5;
-    grid-row: 6;
-  }
-  .mapContainer {
-    grid-column: 2/5;
-    grid-row: 7/12;
-  }
-  .rowCont {
-    grid-row: 12;
-  }
-  .mainFollowCont {
-    grid-row: 13;
-  }
-  .mainFollowCont h2 {
-    font-size: 33px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: none;
   }
   .mainMidCont img {
     width: 30px;
     height: 30px;
   }
-  .seguinosImages a {
-    width: 45px;
+  .mainMidCont .nearMeInfo {
+    grid-column: 0;
+    grid-row: 2;
+    grid-row: 2;
   }
-  #locationLogo {
+  .mainMidCont .whatsappInfo {
+    grid-column: 0;
+    grid-row: 3;
+  }
+  .mainMidCont .mailInfo {
+    grid-column: 0;
+    grid-row: 4;
+  }
+  .mainMidCont .rowCont {
+    grid-column: 0;
+    grid-row: 12;
+  }
+  .mainMidCont #rowOnlyMedia {
+    grid-column: 0;
+    grid-row: 5;
+    display: block;
+  }
+  .mainMidCont .locationInfo {
+    grid-column: 2 / 5;
+    grid-row: 6;
+  }
+  .mainMidCont .locationInfo #locationLogo {
     width: 20px;
+  }
+  .mainMidCont .mapContainer {
+    grid-column: 2 / 5;
+    grid-row: 7 / 12;
+  }
+  .mainMidCont .mainFollowCont {
+    grid-column: 0;
+    grid-row: 13;
+  }
+  .mainMidCont .mainFollowCont h2 {
+    font-size: 33px;
+  }
+  .mainMidCont .mainFollowCont .seguinosImages a {
+    width: 45px;
   }
 }
 @media (max-width: 614px) {
   .dropdown-menu {
     font-size: 12px;
   }
-  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+  .mainHead .contHeadText h1 {
     font-size: 30px;
   }
-  .hContainer {
+  .mainHead .contHeadText .hContainer {
     border: 1px dashed #81D618;
   }
-  p, ul, ol, .hContainer h2, .not > h2 {
+  .mainHead .contHeadText .hContainer h2 {
+    font-size: 15px;
+  }
+  .mainRowHead h1 {
+    font-size: 30px;
+  }
+  .mainVPyTPA h2 {
+    font-size: 30px;
+  }
+  .mainNotContainer .not > h2 {
+    font-size: 15px;
+  }
+  .mainNotContainer .not div > p {
+    font-size: 10px;
+    margin: 8px 0;
+  }
+  p, ul, ol {
     font-size: 15px;
   }
   h3 {
     font-size: 24px;
   }
-  .credits p, .not div > p {
+  .credits p {
     font-size: 10px;
     margin: 8px 0;
   }
@@ -651,21 +781,43 @@ footer .mainFooter .logosContainer #logoFoot {
   .dropdown-menu {
     font-size: 8px;
   }
-  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+  .mainHead .contHeadText h1 {
     font-size: 20px;
   }
-  p, ul, ol, .hContainer h2, .not > h2 {
+  .mainHead .contHeadText .hContainer {
+    border: 1px dashed #81D618;
+  }
+  .mainHead .contHeadText .hContainer h2 {
+    font-size: 10px;
+  }
+  .mainRowHead h1 {
+    font-size: 20px;
+  }
+  .mainVPyTPA h2 {
+    font-size: 20px;
+  }
+  .mainNotContainer .not > h2 {
+    font-size: 10px;
+  }
+  .mainNotContainer .not div > p {
+    font-size: 6px;
+    margin: 4px 0;
+  }
+  p, ul, ol {
     font-size: 10px;
   }
   h3 {
     font-size: 17px;
   }
-  .rowFotter, .blackRow {
+  .blackRow {
     height: 1px;
   }
-  .credits p, .not div > p {
+  .credits p {
     font-size: 6px;
     margin: 4px 0;
+  }
+  .credits .rowFotter {
+    height: 1px;
   }
 }
 @media (max-width: 425px) {
@@ -679,37 +831,40 @@ footer .mainFooter .logosContainer #logoFoot {
   .btn img {
     width: 60%;
   }
-  .vpytpaInfo {
+  .mainVPyTPA .vpytpaInfo {
     width: 85%;
     flex-direction: column;
     margin-top: 0;
   }
-  .vpytpaInfo p {
+  .mainVPyTPA .vpytpaInfo p {
     width: 100%;
     padding: 3% 0;
   }
-  .fottLogo {
+  footer .mainFooter .logosContainer a .fottLogo {
     width: 150%;
   }
   .mainMidCont {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(15, 45px);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: none;
   }
   .mainMidCont img {
     width: 20px;
     height: 20px;
   }
-  .logAndInf h2 {
+  .mainMidCont .logAndInf h2 {
     font-size: 13px;
   }
-  .mainFollowCont h2 {
+  .mainMidCont .mainFollowCont h2 {
     font-size: 20px;
   }
-  .seguinosImages a {
+  .mainMidCont .seguinosImages a {
     width: 30px;
   }
-  #locationLogo {
+  .mainMidCont .locationInfo #locationLogo {
     width: 15px;
   }
 }
@@ -717,19 +872,35 @@ footer .mainFooter .logosContainer #logoFoot {
   .dropdown-menu {
     font-size: 8px;
   }
-  .mainHead .contHeadText h1, .mainRowHead h1, .mainVPyTPA h2 {
+  .mainHead .contHeadText h1 {
     font-size: 15px;
   }
-  p, ul, ol, .hContainer h2, .not > h2 {
+  .mainHead .contHeadText .hContainer {
+    border: 1px dashed #81D618;
+  }
+  .mainHead .contHeadText .hContainer h2 {
+    font-size: 8px;
+  }
+  .mainRowHead h1 {
+    font-size: 15px;
+  }
+  .mainVPyTPA h2 {
+    font-size: 15px;
+  }
+  .mainNotContainer .not > h2 {
+    font-size: 8px;
+  }
+  .mainNotContainer .not div > p {
+    font-size: 7px;
+    margin: 3px 0;
+  }
+  p, ul, ol {
     font-size: 8px;
   }
   h3 {
     font-size: 15px;
   }
-  .rowFotter, .blackRow {
-    height: 1px;
-  }
-  .credits p, .not div > p {
+  .credits p {
     font-size: 4px;
     margin: 3px 0;
   }
@@ -738,7 +909,7 @@ footer .mainFooter .logosContainer #logoFoot {
   #logoVP {
     width: 30%;
   }
-  .fottLogo {
+  footer .mainFooter .logosContainer a .fottLogo {
     width: 150%;
   }
 }
@@ -776,9 +947,13 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 
 .carousel-outinner-flex {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
+  width: 100%;
 }
 
 .carousel-inner {

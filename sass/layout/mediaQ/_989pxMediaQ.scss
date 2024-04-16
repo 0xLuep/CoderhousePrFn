@@ -1,5 +1,9 @@
 @media (min-width: 989px) {
-    .dropstart {
-        display: none;
-    }    
+    header {
+        nav {
+            .dropstart {
+                display: none;
+            }    
+        }
+    }
 }

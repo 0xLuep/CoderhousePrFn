@@ -1,5 +1,9 @@
 @media (max-width: 988px) {
-    .listContainer {
-        display: none;
+    header{
+        nav{
+            .listContainer {
+                display: none;
+            }
+        }
     }
 }

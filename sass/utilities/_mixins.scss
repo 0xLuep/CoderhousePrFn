@@ -1,10 +1,9 @@
-
-
-@mixin flex($direction, $justify, $align, $gap) {
+@mixin flex($direction, $justify, $align, $wrap, $gap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+    flex-wrap: $wrap;
     gap: $gap;
 }
 
@@ -16,4 +15,10 @@
     justify-content: $justify;
     align-content: $align;
     grid-template-areas: $area;
+}
+
+
+@mixin grid-son($col, $row) {
+    grid-column: #{$col};
+    grid-row: #{$row};
 }

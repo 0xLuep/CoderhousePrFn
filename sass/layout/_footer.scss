@@ -1,16 +1,13 @@
-/*--Footer----------------------------------------------------------------*/
+/*-------------------------------Footer-----------------------------------*/
 
 footer {
     margin: 5% 0px 0px 0px;
     .mainFooter {
+        @include flex (row, none, center, none, none);
         background-color: #7E58A3;
-        display: flex;
-        align-items: center;
         padding: 0px 3%;
         .logosContainer {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+            @include flex (row, flex-end, center, none, none);
             width: 100%;
             a {
                 margin: 0 2%;
@@ -33,10 +30,8 @@ footer {
 }
 
 .credits {
+    @include flex (column, none, center, none, none);
     background-color: #613D7E;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     p {
         font-size: 15px;
         margin: 13px 0;
