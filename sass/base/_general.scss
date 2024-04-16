@@ -11,7 +11,7 @@ a:hover {
 }
 
 h1 {
-    color: $main-index-tpa-h1-colour;
+    color: $main-top-row-font-color;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h3 {
     margin: 5% 0px 0px 0px;
     padding-left: 10%;
     font-size: 35px;
-    color: $main-text-titles-colour;
+    color: $main-text-titles-color;
     font-family: $main-font-family;
 }
 
@@ -45,7 +45,7 @@ main {
 
 .mainRowHead {
     @include flex (row, center, center, none, none);
-    background-color: $main-top-row-colour;
+    background-color: $main-top-row-color;
     width: 100%;
     height: 10%;
     h1 {

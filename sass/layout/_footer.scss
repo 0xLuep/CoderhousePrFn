@@ -4,7 +4,7 @@ footer {
     margin: 5% 0px 0px 0px;
     .mainFooter {
         @include flex (row, none, center, none, none);
-        background-color: #7E58A3;
+        background-color: $footer-main-background-color;
         padding: 0px 3%;
         .logosContainer {
             @include flex (row, flex-end, center, none, none);
@@ -31,14 +31,14 @@ footer {
 
 .credits {
     @include flex (column, none, center, none, none);
-    background-color: #613D7E;
+    background-color: $footer-credits-background-color;
     p {
         font-size: 15px;
         margin: 13px 0;
-        color: #FFFFFF;
+        color: $footer-credits-font-color;
     }
     .rowFotter {
-        background-color: #c1a8e2;
+        background-color: $footer-row-color;
         width: 100%;
         height: 5px;
         top: 50px;

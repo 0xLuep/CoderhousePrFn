@@ -1,12 +1,5 @@
 /*-------------------------------TPA-----------------------------------*/
 
-.blackRow {
-    background-color: #000000;
-    width: 70%;
-    height: 3px;
-    margin-bottom: 5%;
-}
-
 .benefTPA {
     @include flex (row, center, none, none, none);
     width: 85%;
@@ -32,6 +25,13 @@
         border-radius: 20px;
         margin: 3%;
     }
+}
+
+.blackRow {
+    background-color: $main-division-row-color;
+    width: 70%;
+    height: 3px;
+    margin-bottom: 5%;
 }
 
 .lastInfoTPA {
