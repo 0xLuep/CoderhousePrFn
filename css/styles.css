@@ -13,6 +13,7 @@
 
 a:hover {
   filter: opacity(0.6);
+  transition: 300ms ease;
 }
 
 h1 {
@@ -109,6 +110,10 @@ header nav .listContainer li {
   color: #FFFFFF;
   font-size: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header nav .listContainer li:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease;
 }
 header nav .listContainer a {
   text-decoration: none;
@@ -931,6 +936,14 @@ footer .mainFooter .logosContainer #logoFoot {
 
 .dropdown-item {
   text-align: center;
+}
+.dropdown-item:is(:hover, :focus) {
+  filter: none;
+  color: #FFFFFF;
+  background-color: rgba(144, 73, 219, 0.7607843137);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  transition: color 200ms ease, transform 300ms ease, background-color 300ms ease, box-shadow 300ms ease;
 }
 
 .dropdown-item.active {

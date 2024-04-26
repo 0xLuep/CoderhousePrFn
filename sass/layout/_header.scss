@@ -17,6 +17,10 @@ header {
                 color: $head-nav-font-color;
                 font-size: 25px;
                 font-family: $main-font-family;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: transform 300ms ease;
+                }
             }
             a {
                 text-decoration: none;

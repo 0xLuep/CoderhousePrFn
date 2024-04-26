@@ -18,6 +18,18 @@
 
 .dropdown-item {
     text-align: center;
+    &:is(:hover, :focus) {
+        filter: none;
+        color: $head-nav-font-color;
+        background-color: $head-hamb-dropdown-item-hover;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+        transform: translateY(-1px);
+        transition:
+            color 200ms ease,
+            transform 300ms ease,
+            background-color 300ms ease,
+            box-shadow 300ms ease;
+    }
 }
 
 
