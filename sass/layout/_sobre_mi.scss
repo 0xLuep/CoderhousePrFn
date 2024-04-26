@@ -9,7 +9,7 @@
         font-family: $main-font-family;
     }
     .vpytpaInfo {
-        @include flex (row, space-evenly, center, none, none);
+        @include flex (row, space-evenly, flex-start, none, none);
         margin: 3% 0 5% 0;
         p {
             width: 35%;

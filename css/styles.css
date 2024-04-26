@@ -359,7 +359,7 @@ footer .mainFooter .logosContainer #logoFoot {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: none;
   gap: none;
   margin: 3% 0 5% 0;
