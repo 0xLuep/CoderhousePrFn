@@ -450,10 +450,12 @@ footer .mainFooter .logosContainer #logoFoot {
   margin: 0;
   font-size: 20px;
 }
+.mainNotContainer .not div .clockCont {
+  width: 12%;
+}
 
 #timeLogo {
-  width: 10%;
-  height: 75%;
+  width: 100%;
 }
 
 /*------------------------------Contacto------------------------------------*/
@@ -735,7 +737,7 @@ footer .mainFooter .logosContainer #logoFoot {
 }
 @media (max-width: 614px) {
   .dropdown-menu {
-    font-size: 12px;
+    font-size: 16px;
   }
   .mainHead .contHeadText h1 {
     font-size: 30px;
@@ -744,7 +746,7 @@ footer .mainFooter .logosContainer #logoFoot {
     border: 1px dashed #81D618;
   }
   .mainHead .contHeadText .hContainer h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .mainRowHead h1 {
     font-size: 30px;
@@ -753,20 +755,20 @@ footer .mainFooter .logosContainer #logoFoot {
     font-size: 30px;
   }
   .mainNotContainer .not > h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .mainNotContainer .not div > p {
-    font-size: 10px;
+    font-size: 16px;
     margin: 8px 0;
   }
   p, ul, ol {
-    font-size: 15px;
+    font-size: 16px;
   }
   h3 {
     font-size: 24px;
   }
   .credits p {
-    font-size: 10px;
+    font-size: 16px;
     margin: 8px 0;
   }
 }
@@ -775,26 +777,16 @@ footer .mainFooter .logosContainer #logoFoot {
     width: 20%;
   }
 }
-@media (max-width: 550px) {
-  .dropdown-menu {
-    font-size: 10px;
-  }
-}
 @media (max-width: 453px) {
   #logoVP {
     width: 25%;
-  }
-  .dropdown-menu {
-    font-size: 8px;
   }
   .mainHead .contHeadText h1 {
     font-size: 20px;
   }
   .mainHead .contHeadText .hContainer {
+    width: 64%;
     border: 1px dashed #81D618;
-  }
-  .mainHead .contHeadText .hContainer h2 {
-    font-size: 10px;
   }
   .mainRowHead h1 {
     font-size: 20px;
@@ -802,15 +794,8 @@ footer .mainFooter .logosContainer #logoFoot {
   .mainVPyTPA h2 {
     font-size: 20px;
   }
-  .mainNotContainer .not > h2 {
-    font-size: 10px;
-  }
   .mainNotContainer .not div > p {
-    font-size: 6px;
     margin: 4px 0;
-  }
-  p, ul, ol {
-    font-size: 10px;
   }
   h3 {
     font-size: 17px;
@@ -819,7 +804,6 @@ footer .mainFooter .logosContainer #logoFoot {
     height: 1px;
   }
   .credits p {
-    font-size: 6px;
     margin: 4px 0;
   }
   .credits .rowFotter {
@@ -862,7 +846,7 @@ footer .mainFooter .logosContainer #logoFoot {
     height: 20px;
   }
   .mainMidCont .logAndInf h2 {
-    font-size: 13px;
+    font-size: 16px;
   }
   .mainMidCont .mainFollowCont h2 {
     font-size: 20px;
@@ -871,43 +855,30 @@ footer .mainFooter .logosContainer #logoFoot {
     width: 30px;
   }
   .mainMidCont .locationInfo #locationLogo {
-    width: 15px;
+    width: 16px;
+  }
+  .mainNotContainer .not {
+    width: 75%;
   }
 }
 @media (max-width: 386px) {
-  .dropdown-menu {
-    font-size: 8px;
-  }
-  .mainHead .contHeadText h1 {
-    font-size: 15px;
-  }
   .mainHead .contHeadText .hContainer {
+    width: 90%;
     border: 1px dashed #81D618;
   }
-  .mainHead .contHeadText .hContainer h2 {
-    font-size: 8px;
-  }
   .mainRowHead h1 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .mainVPyTPA h2 {
-    font-size: 15px;
-  }
-  .mainNotContainer .not > h2 {
-    font-size: 8px;
+    font-size: 16px;
   }
   .mainNotContainer .not div > p {
-    font-size: 7px;
     margin: 3px 0;
   }
-  p, ul, ol {
-    font-size: 8px;
-  }
   h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .credits p {
-    font-size: 4px;
     margin: 3px 0;
   }
 }
@@ -917,6 +888,15 @@ footer .mainFooter .logosContainer #logoFoot {
   }
   footer .mainFooter .logosContainer a .fottLogo {
     width: 150%;
+  }
+  .imgMed img {
+    width: 65%;
+  }
+  .imgMed .noDisplayimgIndex {
+    display: none;
+  }
+  .benefTPA img {
+    display: none;
   }
 }
 .dropstart {
@@ -968,6 +948,7 @@ footer .mainFooter .logosContainer #logoFoot {
   flex-wrap: none;
   gap: none;
   width: 100%;
+  height: 100%;
 }
 
 .carousel-inner {

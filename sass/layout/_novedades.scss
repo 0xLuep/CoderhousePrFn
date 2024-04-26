@@ -40,10 +40,14 @@
                 font-size: 20px;
             }
         }
+        div {
+            .clockCont {
+                width: 12%;
+            }
+        }
     }
 }
 
 #timeLogo {
-    width: 10%;
-    height: 75%;
+    width: 100%;
 }

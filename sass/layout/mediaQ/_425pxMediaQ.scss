@@ -47,7 +47,7 @@
             height: 20px;
         }
         .logAndInf h2 {
-            font-size: 13px;
+            font-size: 16px;
         }
         .mainFollowCont h2 {
             font-size: 20px;
@@ -57,8 +57,14 @@
         }
         .locationInfo {
             #locationLogo {
-                width: 15px;
+                width: 16px;
             }
+        }
+    }
+
+    .mainNotContainer {
+        .not {
+            width: 75%;
         }
     }
 }

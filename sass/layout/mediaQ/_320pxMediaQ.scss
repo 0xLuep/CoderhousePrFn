@@ -14,4 +14,19 @@
             }
         }
     }
+
+    .imgMed {
+        img {
+            width: 65%;
+        }
+        .noDisplayimgIndex {
+            display: none;
+        }
+    }
+
+    .benefTPA {
+        img {
+            display: none;
+        }
+    }
 }
